@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Lobo Jogos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- cabecalho -->
+    <header>
+      <div class="container">
+        <div class="welcome">
+          <p>Seja bem-vindo(a), <a href="/login">Faça login!</a></p>
+        </div>
+        <div class="contatos-nav">
+          <div class="contatos-header">
+            <a href="">(11) 5816-7643</a>
+            <span>|</span>
+            <a href=""><i class="fa-brands fa-whatsapp"></i> 94585-2563</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/quemsomos">Quem Somos</a></li>
+              <li><a href="/pedidos">Meus Pedidos</a></li>
+              <li><a href="/faleconosco">Fale Conosco</a></li>
+              <li><a href="/cadastrese">Cadastre-se</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-search">
+          <div class="logo-caixa">
+            <img
+              src="./imgs/lobo-logo.png"
+              alt="ilustração de um lobo jogando rpg"
+              width="200px"
+            />
+          </div>
+          <div class="search-bar">
+            <form>
+              <input
+                type="text"
+                placeholder="O que você procura?"
+                name="search"
+                id="search"
+              />
+              <button type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <div class="cart">
+            <div class="cart-icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <div class="icon-count">
+                <p>0</p>
+              </div>
+            </div>
+            <div class="cart-text">
+              <p class="total-itens">Itens 0</p>
+              <p class="total-price">R$0,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- seção menu -->
+      <section class="secao secao-menu">
+        <!-- menu -->
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="">Promoções</a>
+              <ul class="promocao-list">
+                <h2>Promoções</h2>
+                <div class="line"></div>
+                <li class="promocao-item">Jogos em Promoção</li>
+                <li class="promocao-item">Expansões em Promoção</li>
+                <li class="promocao-item">Acessórios em Promoção</li>
+                <li class="promocao-item">Outlet</li>
+                <li class="promocao-item">Combos Exclusivos</li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="">Lançamentos</a></li>
+            <li class="menu-item">
+              <a href="">Jogos</a>
+              <ul class="jogos-list">
+                <h2>Jogos</h2>
+                <div class="line"></div>
+                <li class="jogos-item">Baralhos</li>
+                <li class="jogos-item">Clássicos</li>
+                <li class="jogos-item">Coleções</li>
+                <li class="jogos-item">Infantil</li>
+                <li class="jogos-item">Jogos para Familia</li>
+                <li class="jogos-item">Card Games (Jogos de Carta)</li>
+                <li class="jogos-item">Party Games (Muitos jogadores)</li>
+                <li class="jogos-item">Dice Games (Jogos de Dados)</li>
+                <li class="jogos-item">Take That (Toma essa)</li>
+                <li class="jogos-item">Dedução</li>
+                <li class="jogos-item">Cooperativos</li>
+                <li class="jogos-item">Competitivos</li>
+                <li class="jogos-item">Nº de Jogadores</li>
+                <li class="jogos-item">Expansões</li>
+                <li class="jogos-item">Pré-Venda</li>
+                <li class="jogos-item">Em Breve (Sem Data de Lançamento)</li>
+                <li class="jogos-item">Jogos +18</li>
+                <li class="jogos-item">Desenvolvimento Infantil</li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="">RPG</a>
+              <ul class="rpg-list">
+                <h2>Rpg</h2>
+                <div class="line"></div>
+                <li class="rpg-item">Dungeons & Dragons (D&D)</li>
+                <li class="rpg-item">Vampiro</li>
+                <li class="rpg-item">O Chamado de Cthullu</li>
+                <li class="rpg-item">Outros Sistemas</li>
+                <li class="rpg-item">Tormenta</li>
+                <li class="rpg-item">Livro-Jogo</li>
+                <li class="rpg-item">3D&T</li>
+                <li class="rpg-item">Tales From The Loop</li>
+                <li class="rpg-item">Ordem Paranormal</li>
+                <li class="rpg-item">Dados e Acessórios</li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="">Acessórios</a>
+              <ul class="acessorios-list">
+                <h2>Acessórios</h2>
+                <div class="line"></div>
+                <li class="acessorios-item">Sleeves</li>
+                <li class="acessorios-item">Acessórios</li>
+                <li class="acessorios-item">Caixinhas 3D</li>
+                <li class="acessorios-item">Dados</li>
+                <li class="acessorios-item">Gamegenic</li>
+                <li class="acessorios-item">Componentes Realísticos</li>
+                <li class="acessorios-item">Inserts (Organizadores)</li>
+                <li class="acessorios-item">Moedas de Metal</li>
+                <li class="acessorios-item">Playmats</li>
+                <li class="acessorios-item">
+                  Peças para Protótipos e Reposições
+                </li>
+                <li class="acessorios-item">Geek Shop</li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="">Quebra Cabeças</a>
+              <ul class="puzzle-list">
+                <h2>Quebra Cabeças</h2>
+                <div class="line"></div>
+                <li class="puzzle-item">Infantil</li>
+                <li class="puzzle-item">Terceira Idade</li>
+                <li class="puzzle-item">3D</li>
+                <li class="puzzle-item">60 Peças</li>
+                <li class="puzzle-item">100 Peças</li>
+                <li class="puzzle-item">200 Peças</li>
+                <li class="puzzle-item">500 Peças</li>
+                <li class="puzzle-item">1000 Peças</li>
+                <li class="puzzle-item">2000 Peças</li>
+                <li class="puzzle-item">4000 Peças</li>
+                <li class="puzzle-item">6000 Peças</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+          <div class="banner-img"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

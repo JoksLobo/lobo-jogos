@@ -1,0 +1,320 @@
+:root {
+  --main-font-color: #303030;
+  --span-colour: rgb(83, 209, 167);
+  --white: #fff;
+  --principal-colour: #2b4e72;
+  --second-colour: #94ba65;
+  --second-colour-darker: #81a15a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: var(--main-font-color);
+}
+
+/* Cabecalho / Header */
+header {
+  align-items: center;
+  width: 100%;
+  padding: 2rem 5rem;
+  background-color: var(--principal-colour);
+  color: var(--white);
+
+  & a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+
+  & .welcome {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    & a {
+      color: var(--span-colour);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--white);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & .contatos-nav {
+    display: flex;
+
+    & .contatos-header {
+      font-weight: 700;
+      background-color: #4e4d4a;
+      padding: 2rem;
+      border-top-left-radius: 2.5rem;
+      border-bottom-left-radius: 2.5rem;
+      & a {
+        color: var(--white);
+      }
+    }
+
+    & nav {
+      background-color: var(--second-colour);
+      padding: 2rem;
+      & ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        list-style: none;
+
+        & li {
+          font-weight: 700;
+          transition: transform 0.3s ease;
+
+          & a {
+            color: var(--white);
+          }
+
+          &:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  /* header search */
+  & .header-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    /* logo */
+
+    & .logo-caixa img {
+      max-width: 15rem;
+      border-radius: 50%;
+      border: solid 0.2rem var(--white);
+    }
+
+    /* search-bar */
+
+    & .search-bar {
+      position: relative;
+      margin-right: 2rem;
+
+      & input {
+        padding: 2rem 5rem 2rem 3rem;
+        border-radius: 9rem 0 0 9rem;
+        width: 35vw;
+        border: none;
+      }
+
+      & button {
+        position: absolute;
+        transform: translate(-35%, -3%);
+        transition: all 0.3s ease;
+        background-color: var(--second-colour);
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        font-size: 3rem;
+        border: none;
+        color: var(--white);
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--second-colour-darker);
+        }
+      }
+    }
+
+    /* cart / carrinho */
+
+    & .cart {
+      display: flex;
+      gap: 2rem;
+
+      & .cart-icon {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        & i {
+          font-size: 5rem;
+          position: relative;
+        }
+
+        & .icon-count {
+          height: 3rem;
+          width: 3rem;
+          background-color: var(--second-colour);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          transform: translate(0, 80%);
+        }
+      }
+
+      & .cart-text {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        & p {
+          font-weight: 700;
+
+          &.total-price {
+            font-size: 2rem;
+            line-height: 2.4;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* secao menu */
+.secao-menu {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--second-colour);
+
+  & .menu {
+    width: 100%;
+    padding: 0 7.63rem;
+    position: relative;
+
+    & .menu-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      & .menu-item {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 3rem;
+        cursor: pointer;
+
+        &:hover {
+          & a {
+            color: var(--white);
+          }
+
+          & .promocao-list,
+          .jogos-list,
+          .rpg-list,
+          .acessorios-list,
+          .puzzle-list {
+            display: flex;
+          }
+
+          & .jogos-list,
+          .rpg-list,
+          .acessorios-list,
+          .puzzle-list {
+            display: flex;
+            transform: translateX(-15rem) translateY(3rem);
+          }
+        }
+
+        & a {
+          color: var(--main-font-color);
+          text-decoration: none;
+          transition: all 0.5s ease;
+
+          /* &:hover {
+            color: var(--white);
+          } */
+        }
+
+        & .promocao-list,
+        .jogos-list,
+        .rpg-list,
+        .acessorios-list,
+        .puzzle-list {
+          transform: translateY(3rem);
+          display: none;
+          flex-flow: column;
+          background-color: var(--white);
+          list-style: none;
+          border-top: 0.8rem solid var(--principal-colour);
+          padding: 2rem 3rem;
+          max-width: 32rem;
+          width: 100%;
+          position: absolute;
+          overflow: hidden;
+          box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
+          border-bottom-left-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+
+          & h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+          }
+
+          & .line {
+            height: 0.1rem;
+            width: 100%;
+            background-color: var(--principal-colour);
+            margin-bottom: 2rem;
+          }
+
+          & .promocao-item,
+          .jogos-item,
+          .rpg-item,
+          .acessorios-item,
+          .puzzle-item {
+            margin-bottom: 1rem;
+            width: 100%;
+            cursor: pointer;
+            text-transform: none;
+            transition: all 0.5s ease;
+
+            &:hover {
+              color: var(--second-colour);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .banner {
+    height: 40rem;
+    width: 100%;
+
+    & .banner-img {
+      width: 100%;
+      height: 100%;
+      background-image: url(https://67287.cdn.simplo7.net/static/67287/banner/topo_175163491166929.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
