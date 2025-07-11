@@ -247,10 +247,6 @@ header {
           color: var(--main-font-color);
           text-decoration: none;
           transition: all 0.5s ease;
-
-          /* &:hover {
-            color: var(--white);
-          } */
         }
 
         & .promocao-list,
