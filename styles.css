@@ -407,6 +407,26 @@ header {
             flex-flow: column;
             justify-content: center;
             cursor: pointer;
+            position: relative;
+
+            & .tag {
+              background-color: var(--span-colour);
+              border-radius: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 10rem;
+              padding: 0.5rem 0;
+              position: absolute;
+              top: 0;
+
+              & p {
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: var(--white);
+              }
+            }
 
             & .card-img img {
               width: 100%;
