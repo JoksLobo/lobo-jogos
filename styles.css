@@ -25,6 +25,8 @@ body {
   color: var(--main-font-color);
 }
 
+/* global */
+
 .loja-item,
 & .desconto-item {
   background-color: var(--white);
@@ -498,12 +500,57 @@ header {
         }
       }
 
-      & .loja-list,
-      & .desconto-list {
+      & .loja-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 3.5rem;
       }
+    }
+  }
+}
+
+/* seção descontos */
+
+.secao-descontos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--principal-colour);
+
+  & .container-descontos {
+    padding: 7.63rem 7.63rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+
+    & .caixa-texto-desconto {
+      position: absolute;
+      top: -30px;
+      background-color: #81a15a;
+      width: 50rem;
+      height: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--main-font-color) 10px 10px 0;
+
+      & h2 {
+        font-size: 2.9rem;
+        color: var(--white);
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+
+    & .desconto-list {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
     }
   }
 }
