@@ -512,6 +512,32 @@ header {
         }
       }
     }
+
+    /* pagina de produto */
+
+    & .links {
+      display: flex;
+      gap: 1rem;
+      font-weight: 700;
+      color: var(--principal-colour);
+      backdrop-filter: blur(5px);
+      margin-bottom: 5rem;
+
+      & .link-home,
+      & .link-jogos,
+      & .link-produto {
+        text-decoration: none;
+        color: var(--second-colour);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      & .link-produto {
+        color: var(--span-colour);
+      }
+    }
   }
 }
 
