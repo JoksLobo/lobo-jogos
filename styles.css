@@ -654,12 +654,12 @@ header {
         & .categorias {
           display: flex;
           flex-wrap: wrap;
-          gap: 1rem;
+          gap: 0.6rem;
         }
 
         & .marca {
           display: flex;
-          gap: 1rem;
+          gap: 0.6rem;
         }
 
         & .tags {
@@ -680,6 +680,20 @@ header {
             background-color: var(--second-colour);
             padding: 0.8rem;
             border-radius: 2.5rem;
+          }
+        }
+
+        & .avaliacao {
+          display: flex;
+          gap: 1rem;
+
+          & .estrelas {
+            color: var(--combo-colour);
+          }
+
+          & .avaliacoes {
+            display: flex;
+            gap: 1rem;
           }
         }
       }
