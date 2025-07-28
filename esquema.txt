@@ -1,0 +1,34 @@
+
+
+                    <div class="produto">
+            <div class="caixa-imgs">
+              <img
+                src="https://67287.cdn.simplo7.net/static/67287/sku/jogos-de-tabuleiro-e-cardgames-jogo-heat-pedal-to-the-metal-p-1717597436348.jpg"
+                alt=""
+                class="principal-img"
+              />
+              <div class="carrossel-caixa-imgs">
+                <div class="seta"><</div>
+                <div class="carrossel-imgs">
+                  <img
+                    src="https://67287.cdn.simplo7.net/static/67287/sku/jogos-de-tabuleiro-e-cardgames-jogo-heat-pedal-to-the-metal-p-1717597441707.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://67287.cdn.simplo7.net/static/67287/sku/jogos-de-tabuleiro-e-cardgames-jogo-heat-pedal-to-the-metal-p-1717598182343.jpg"
+                    alt=""
+                  />
+                  <img
+                    src="https://67287.cdn.simplo7.net/static/67287/sku/jogos-de-tabuleiro-e-cardgames-jogo-heat-pedal-to-the-metal-p-1717598187913.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="seta">></div>
+              </div>
+            </div>
+          </div>
+          <div class="botoes-links">
+            <a href="">Adicionar à minha lista de desejos</a>
+            <a href="">Recomendar produto</a>
+          </div>
+          </div>

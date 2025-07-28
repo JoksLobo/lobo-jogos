@@ -541,10 +541,15 @@ header {
 
     & .produto {
       display: flex;
+      gap: 3rem;
       max-width: 110rem;
       width: 100%;
       background-color: var(--white);
       padding: 3rem;
+
+      & img {
+        width: 100%;
+      }
 
       & .caixa-imgs {
         display: flex;
@@ -552,11 +557,38 @@ header {
         align-items: center;
         justify-content: center;
 
+        & .botoes-links {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          gap: 1rem;
+
+          & a {
+            text-decoration: none;
+            height: 4rem;
+            padding: 1rem 2rem;
+            border-radius: 0.6rem;
+            background-color: var(--second-colour);
+            color: var(--white);
+            font-weight: 700;
+            transition: all ease 0.8s;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+
+            &:hover {
+              background-color: var(--second-colour-darker);
+            }
+          }
+        }
+
         & .principal-img {
           max-width: 50rem;
           margin-bottom: 2rem;
           border-radius: 0.8rem;
           border: 1px solid var(--second-colour);
+          padding: 1rem;
         }
 
         & .carrossel-caixa-imgs {
