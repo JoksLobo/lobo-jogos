@@ -516,20 +516,6 @@ header {
           color: inherit;
         }
       }
-
-      @media (max-width: 1000px) {
-        & .secao-lancamentos {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-
-        & .loja-list {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
     }
 
     /* pagina de produto */
