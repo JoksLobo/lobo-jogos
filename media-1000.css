@@ -3,6 +3,17 @@
     font-size: 54.25%;
   }
 
+  /* menu */
+  .secao-menu {
+    & .menu {
+      & .menu-list {
+        & .menu-item {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+
   /* loja */
   .secao-loja {
     & .container-loja {
