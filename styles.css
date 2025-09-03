@@ -739,6 +739,82 @@ header {
             }
           }
         }
+
+        & .precos-comprar {
+          display: flex;
+          font-size: 1.4rem;
+          align-items: center;
+          gap: 4rem;
+
+          & .precos {
+            display: flex;
+            flex-flow: column;
+            gap: 0.6rem;
+
+            & .preco-total {
+              color: var(--second-colour);
+
+              & span {
+                font-size: 2.4rem;
+              }
+            }
+
+            & .parcelas {
+              position: relative;
+
+              &:hover {
+                & .parcelas-container {
+                  display: flex;
+                  flex-flow: column;
+                  transform: translate(10%, 0);
+                }
+              }
+
+              & p {
+                & i {
+                  font-size: 1rem;
+                }
+              }
+
+              & .parcelas-container {
+                display: none;
+                position: absolute;
+                background-color: var(--white);
+                padding: 1rem 1rem 0.5rem;
+                font-size: 1.2rem;
+                width: 23.7rem;
+                min-height: 30.3rem;
+
+                & table {
+                  display: column;
+                  width: 100%;
+                  min-height: 30.3rem;
+                  border: 1px solid var(--main-font-color);
+                }
+              }
+            }
+          }
+        }
+
+        & .botao {
+          & .botao-comprar {
+            width: 25rem;
+            height: 8rem;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--second-colour);
+            text-transform: uppercase;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.8rem;
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+              background-color: var(--second-colour-darker);
+            }
+          }
+        }
       }
     }
   }
