@@ -553,6 +553,7 @@ header {
       width: 100%;
       background-color: var(--white);
       padding: 3rem;
+      border-radius: 0.3rem;
 
       & .caixa-imgs {
         display: flex;
