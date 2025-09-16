@@ -844,12 +844,13 @@ header {
     }
 
     & .especificacoes {
+      font-weight: 500;
+      line-height: 1.1;
+
       & .caixa-textos-especificacoes {
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
-        font-weight: 500;
-        line-height: 1.1;
 
         & .paragrafo {
           display: flex;
@@ -868,6 +869,16 @@ header {
               margin-bottom: 1rem;
               margin-top: 0.5rem;
             }
+          }
+        }
+
+        & .caracteristicas {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          span {
+            font-weight: 700;
           }
         }
       }
